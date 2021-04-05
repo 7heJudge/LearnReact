@@ -7,21 +7,4 @@
     width: 1200px;
 }
 
-.header {
-    grid-area: h;
-    background-color: dodgerblue;
-}
 
-.nav {
-    grid-area: n;
-    background-color: yellow;
-}
-
-.content {
-    grid-area: c;
-    background-color: darkseagreen;
-}
-
-.header img {
-    width: 50px;
-}
