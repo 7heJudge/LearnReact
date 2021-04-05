@@ -1,4 +1,4 @@
-.app-wrapper {
+.appWrapper {
     margin: 0 auto;
     display: grid;
     grid-template-areas: "h h" "n c";
@@ -6,5 +6,11 @@
     grid-template-columns: 2fr 10fr;
     width: 1200px;
 }
+
+.appWrapperContent {
+    grid-area: c;
+    background-color: darkseagreen;
+}
+
 
 
