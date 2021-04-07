@@ -1,13 +1,14 @@
 import cls from './Navbar.module.css';
+import {NavLink} from "react-router-dom";
 
 export const Navbar = () => {
     return (
         <nav className={cls.nav}>
-            <div className={cls.item}><a href='/profile'>Profile</a></div>
-            <div className={`${cls.item} ${cls.temp}`}><a href='/dialogs'>Messages</a></div>
-            <div className={cls.item}><a href='/news'>News</a></div>
-            <div className={cls.item}><a href='/music'>Music</a></div>
-            <div className={cls.item}><a href='/settings'>Settings</a></div>
+            <div className={cls.item}><NavLink to='/profile' activeClassName={cls.active}>Profile</NavLink></div>
+            <div className={cls.item}><NavLink to='/dialogs' activeClassName={cls.active}>Messages</NavLink></div>
+            <div className={cls.item}><NavLink to='/news' activeClassName={cls.active}>News</NavLink></div>
+            <div className={cls.item}><NavLink to='/music' activeClassName={cls.active}>Music</NavLink></div>
+            <div className={cls.item}><NavLink to='/settings' activeClassName={cls.active}>Settings</NavLink></div>
         </nav>
     );
 };
