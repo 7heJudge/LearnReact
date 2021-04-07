@@ -9,7 +9,17 @@
 }
 
 .dialogsItems .dialog {
-    padding: 10px;
+    padding: 0 10px;
+}
+
+.dialogsItems .dialog a{
+    text-decoration: none;
+    color: white;
+}
+
+.dialogsItems .dialog a.active {
+    color: gray;
+    font-weight: 700;
 }
 
 .dialogsItems .dialog.active {
