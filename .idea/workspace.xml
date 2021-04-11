@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06936616-f024-4030-8d21-f41d2ce4b8f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Dialogs/DialogItem/DialogItem.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Dialogs/Message/Message.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Friends/FriendItem/FriendItem.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Friends/Friends.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Friends/Friends.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/state.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/DialogItem/DialogItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/DialogItem/DialogItem.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
@@ -32,7 +37,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Dialogs/Message" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -42,17 +47,17 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\components\Friends\FriendItem" />
+      <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\components\Friends" />
+      <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\components\Dialogs\Message" />
+      <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\components\Dialogs\DialogItem" />
+      <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\components\Profile\ProfileInfo" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\components\Profile" />
       <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\components\Navbar" />
       <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\components\Header" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\components\Dialogs\Message" />
-      <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\components\Dialogs\DialogItem" />
-      <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\components\Profile\ProfileInfo" />
-      <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\components" />
-      <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\components\Profile\MyPosts\Post" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -79,7 +84,12 @@
       <updated>1617609074186</updated>
       <workItem from="1617609075318" duration="14378000" />
       <workItem from="1617783566611" duration="19699000" />
-      <workItem from="1617885811855" duration="8420000" />
+      <workItem from="1617885811855" duration="8666000" />
+      <workItem from="1617956962745" duration="8162000" />
+      <workItem from="1618042845980" duration="7677000" />
+      <workItem from="1618124656818" duration="13333000" />
+      <workItem from="1618150386294" duration="2547000" />
+      <workItem from="1618152950544" duration="298000" />
     </task>
     <servers />
   </component>

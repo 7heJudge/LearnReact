@@ -1,0 +1,31 @@
+.friends {
+    display: grid;
+}
+
+.friends {
+    padding: 10px;
+}
+
+.friends .friendsItems {
+    padding: 0 10px;
+}
+
+.friends .friendsItems img {
+    width: 25px;
+    border-radius: 30px;
+}
+
+.friendsItems .friend img {
+    width: 25px;
+    border-radius: 30px;
+}
+
+.friendsItems .friend a {
+    text-decoration: none;
+    color: white;
+}
+
+.friendsItems .friend a.active {
+    color: gray;
+    font-weight: 700;
+}

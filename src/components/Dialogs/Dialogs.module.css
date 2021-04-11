@@ -5,11 +5,15 @@
 
 .dialogsItems {
     padding: 10px;
-
 }
 
 .dialogsItems .dialog {
     padding: 0 10px;
+}
+
+.dialogsItems .dialog img {
+    width: 25px;
+    border-radius: 30px;
 }
 
 .dialogsItems .dialog a{
