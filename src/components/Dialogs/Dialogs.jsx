@@ -8,11 +8,11 @@ export const Dialogs = (props) => {
     let messagesElements = props.messagesPage.messages.map(el => (<Message message={el.message}/>));
     let newMessage = React.createRef();
     let addMessage = () => {
-        props.addMessage();
+        props.dispatch({ type: 'ADD-MESSAGE' });
     };
     let onMessageChange = () => {
         let text = newMessage.current.value;
-        props.updateNewMessageText(text);
+        props.dispatch({ type: 'UPDATE-NEW-MESSAGE-TEXT', newMessage: text });
     };
 
     return (
