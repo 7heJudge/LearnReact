@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06936616-f024-4030-8d21-f41d2ce4b8f3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/redux/friends-reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/messages-reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/profile-reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/state.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,6 +19,13 @@
       <executable />
     </execution>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -27,7 +36,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/redux" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -37,17 +46,17 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\components\Friends\FriendItem" />
-      <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\components\Friends" />
-      <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\components\Dialogs\Message" />
-      <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\components\Dialogs\DialogItem" />
-      <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\components\Profile\ProfileInfo" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\components\Profile" />
       <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\components\Navbar" />
       <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\components\Header" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\redux" />
+      <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\components\Friends\FriendItem" />
+      <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\components\Friends" />
+      <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\components\Dialogs\Message" />
+      <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\components\Dialogs\DialogItem" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -82,7 +91,7 @@
       <workItem from="1618152950544" duration="1234000" />
       <workItem from="1618160758616" duration="373000" />
       <workItem from="1618388196506" duration="10591000" />
-      <workItem from="1618560074543" duration="4069000" />
+      <workItem from="1618560074543" duration="8744000" />
     </task>
     <servers />
   </component>
