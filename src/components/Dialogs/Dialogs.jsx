@@ -13,11 +13,11 @@ export const Dialogs = (props) => {
     let messagesElements = props.messagesPage.messages.map(el => (<Message message={el.message}/>));
     let newMessageBody = props.messagesPage.newMessageBody;
     let onSendMessageClick = () => {
-        props.dispatch(sendMessageCreator());
+        props.onSendMessageClick();
     };
     let onMessageChange = (e) => {
         let body = e.target.value;
-        props.dispatch(updateNewMessageBodyCreator(body));
+        props.onMessageChange(body);
     };
 
     return (

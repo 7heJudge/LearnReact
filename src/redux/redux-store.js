@@ -4,9 +4,9 @@ import messagesReducer from "./messages-reducer";
 import friendsReducer from "./friends-reducer";
 
 let reducers = combineReducers({
-    profileReducer: profileReducer,
-    messagesReducer: messagesReducer,
-    friendsReducer: friendsReducer
+    profilePage: profileReducer,
+    messagesPage: messagesReducer,
+    friendsPage: friendsReducer
 });
 
 export let store = createStore(reducers);
