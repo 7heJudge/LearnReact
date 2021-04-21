@@ -3,15 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="06936616-f024-4030-8d21-f41d2ce4b8f3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/DialogsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/DialogsContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Friends/Friends.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Friends/Friends.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPostsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPostsContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/messages-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/messages-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/profile-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/profile-reducer.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,17 +46,17 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\components\Profile" />
+      <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\components\Navbar" />
+      <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\components\Header" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\components\Friends" />
       <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\components\Dialogs" />
       <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\components\Profile\MyPosts" />
       <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\redux" />
       <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\components\Friends\FriendItem" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\components\Profile" />
-      <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\components\Navbar" />
-      <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\components\Header" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -116,7 +111,8 @@
       <workItem from="1618560074543" duration="14643000" />
       <workItem from="1618737041961" duration="12875000" />
       <workItem from="1618816968760" duration="13273000" />
-      <workItem from="1618833371796" duration="2151000" />
+      <workItem from="1618833371796" duration="3406000" />
+      <workItem from="1618990557692" duration="6200000" />
     </task>
     <servers />
   </component>
