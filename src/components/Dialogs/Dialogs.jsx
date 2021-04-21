@@ -9,8 +9,8 @@ import {
 
 export const Dialogs = (props) => {
     let dialogsElements = props.messagesPage.dialogs.map(el => (
-        <DialogItem id={el.id} name={el.name} image={el.image}/>));
-    let messagesElements = props.messagesPage.messages.map(el => (<Message message={el.message}/>));
+        <DialogItem id={el.id} key={el.id} name={el.name} image={el.image}/>));
+    let messagesElements = props.messagesPage.messages.map(el => (<Message message={el.message} key={el.id}/>));
     let newMessageBody = props.messagesPage.newMessageBody;
     let onSendMessageClick = () => {
         props.onSendMessageClick();
