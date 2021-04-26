@@ -1,35 +1,15 @@
 import cls from './Users.module.css';
 import * as React from "react";
+import * as axios from "axios";
+import userPhoto from './../../images/user.png';
 
 export const Users = (props) => {
-
-    if (props.users.length === 0){
-        props.setUsers([
-            {
-                id: 1,
-                photoUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_inoMhjfUWG1o6ejHD7v9iEHnrDDjr53a3oc1r4muc1jUfpuq6ONP3Ku9DNNw7PbYiGQ&usqp=CAU',
-                followed: false,
-                fullName: 'Yan',
-                status: 'Main kaban',
-                location: {city: 'Dnipro', country: 'Ukraine'}
-            },
-            {
-                id: 2,
-                photoUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbTU5C_QXVqSVbVvA1kMsJ6W2FJxE6Ki6Xnw&usqp=CAU',
-                followed: true,
-                fullName: 'Kura',
-                status: 'secondary kaban',
-                location: {city: 'Moscow', country: 'Russia'}
-            },
-            {
-                id: 3,
-                photoUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF3A5HVX3h4G0x2RXS9fzvlIC-Ea1x7wUc3A&usqp=CAU',
-                followed: false,
-                fullName: 'Misha',
-                status: 'secondary kaban',
-                location: {city: 'Kiev', country: 'Ukraine'}
-            }
-        ]);
+    if (props.users.length === 0) {
+        axios
+            .get("https://social-network.samuraijs.com/api/1.0/users")
+            .then(response => {
+                props.setUsers(response.data.items)
+            });
     }
 
     return (
@@ -37,22 +17,26 @@ export const Users = (props) => {
             {props.users.map(u => <div key={u.id}>
                 <span>
                     <div>
-                        <img src={u.photoUrl} className={cls.userPhoto}/>
+                        <img src={u.photos.small != null ? u.photos.small : userPhoto} className={cls.userPhoto}/>
                     </div>
                     <div>
-                        { u.followed
-                            ? <button onClick={() => {props.unfollow(u.id) } }>Unfollow</button>
-                            : <button onClick={() => {props.follow(u.id) } }>Follow</button> }
+                        {u.followed
+                            ? <button onClick={() => {
+                                props.unfollow(u.id)
+                            }}>Unfollow</button>
+                            : <button onClick={() => {
+                                props.follow(u.id)
+                            }}>Follow</button>}
                     </div>
                 </span>
                 <span>
                     <span>
-                        <div>{u.fullName}</div>
+                        <div>{u.name}</div>
                         <div>{u.status}</div>
                     </span>
                     <span>
-                        <div>{u.location.country}</div>
-                        <div>{u.location.city}</div>
+                        <div>{"u.location.country"}</div>
+                        <div>{"u.location.city"}</div>
                     </span>
                 </span>
             </div>)}
