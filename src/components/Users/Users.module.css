@@ -2,3 +2,7 @@
     border-radius: 30px;
     width: 200px;
 }
+
+.selectedPage {
+    font-weight: 500;
+}
