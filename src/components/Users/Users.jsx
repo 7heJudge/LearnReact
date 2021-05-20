@@ -5,10 +5,11 @@ import userPhoto from './../../images/user.png';
 
 export let Users = (props) => {
 
-    let pagesCount = Math.ceil(props.totalUsersCount / props.pageSize);
+    // let pagesCount = Math.ceil(props.totalUsersCount / props.pageSize);
+    let pagesCount = 30;
 
     let pages = [];
-    for (let i = 1; i <= 30; i++) {
+    for (let i = 1; i <= pagesCount; i++) {
         pages.push(i);
     }
 
