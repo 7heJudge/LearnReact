@@ -1,7 +1,7 @@
 import cls from './Users.module.css';
 import * as React from "react";
-import * as axios from "axios";
 import userPhoto from './../../images/user.png';
+import {NavLink} from "react-router-dom";
 
 export let Users = (props) => {
 
@@ -25,7 +25,9 @@ export let Users = (props) => {
         {props.users.map(u => <div key={u.id}>
                 <span>
                     <div>
-                        <img src={u.photos.small != null ? u.photos.small : userPhoto} className={cls.userPhoto}/>
+                        <NavLink to={'/profile/'+u.id}>
+                            <img src={u.photos.small != null ? u.photos.small : userPhoto} className={cls.userPhoto}/>
+                        </NavLink>
                     </div>
                     <div>
                         {u.followed

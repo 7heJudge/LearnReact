@@ -10,7 +10,6 @@ import {
     unfollow
 } from "../../redux/users-reducer";
 import * as axios from "axios";
-import preloader from "../../images/preloader.gif";
 import {Preloader} from "../common/Preloader/Preloader";
 
 class UsersContainer extends React.Component {

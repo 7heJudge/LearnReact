@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06936616-f024-4030-8d21-f41d2ce4b8f3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/Users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/Users.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/users-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/users-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/profile-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/profile-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redux-store.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +40,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../pc4u" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Profile" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -45,17 +51,17 @@
     <property name="ts.external.directory.path" value="D:\Programms\PhpStorm 2019.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\components\common\Preloader" />
-      <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\components" />
-      <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\redux" />
-      <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\components\Friends" />
-      <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\components\Dialogs" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\components\Profile" />
       <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\components\Navbar" />
       <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\components\Header" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\components\Profile" />
+      <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\components\common\Preloader" />
+      <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\components" />
+      <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\redux" />
+      <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\components\Friends" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -145,7 +151,11 @@
       <workItem from="1621755339774" duration="613000" />
       <workItem from="1621865477288" duration="626000" />
       <workItem from="1621946541919" duration="961000" />
-      <workItem from="1621965265345" duration="2689000" />
+      <workItem from="1621965265345" duration="3708000" />
+      <workItem from="1622015675697" duration="1622000" />
+      <workItem from="1622021313349" duration="595000" />
+      <workItem from="1622032819600" duration="6204000" />
+      <workItem from="1622050592007" duration="1461000" />
     </task>
     <servers />
   </component>
