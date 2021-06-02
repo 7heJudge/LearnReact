@@ -5,11 +5,10 @@ import {
     follow,
     setCurrentPage,
     setTotalUsersCount,
-    setUsers,
+    setUsers, toggleFollowingProgress,
     toggleIsFetching,
     unfollow
 } from "../../redux/users-reducer";
-import * as axios from "axios";
 import {Preloader} from "../common/Preloader/Preloader";
 import {usersAPI} from "../../api/api";
 
@@ -36,13 +35,15 @@ class UsersContainer extends React.Component {
 
     onUnfollow = (id) => {
             usersAPI.UnfollowToUser(id).then(response => {
-                this.props.unfollow(id)
+                this.props.unfollow(id);
+                this.props.toggleFollowingProgress(false, id);
             });
     };
 
     onFollow = (id) => {
         usersAPI.FollowToUser(id).then(response => {
-            this.props.follow(id)
+            this.props.follow(id);
+            this.props.toggleFollowingProgress(false, id);
         });
     };
 
@@ -55,6 +56,10 @@ class UsersContainer extends React.Component {
                    onPageChanged={this.onPageChanged}
                    onUnfollow={this.onUnfollow}
                    onFollow={this.onFollow}
+                   followingInProgress={this.props.followingInProgress}
+                   toggleFollowingProgress={this.props.toggleFollowingProgress}
+                   follow={this.props.follow}
+                   unfollow={this.props.unfollow}
                    users={this.props.users}/>
         </>
     }
@@ -66,7 +71,8 @@ let mapStateToProps = (state) => {
         pageSize: state.usersPage.pageSize,
         totalUsersCount: state.usersPage.totalUsersCount,
         currentPage: state.usersPage.currentPage,
-        isFetching: state.usersPage.isFetching
+        isFetching: state.usersPage.isFetching,
+        followingInProgress: state.usersPage.followingInProgress
     };
 };
 
@@ -99,7 +105,8 @@ export default connect(mapStateToProps, {
     setUsers,
     setCurrentPage,
     setTotalUsersCount,
-    toggleIsFetching
-    })(UsersContainer);
+    toggleIsFetching,
+    toggleFollowingProgress
+})(UsersContainer);
 
 

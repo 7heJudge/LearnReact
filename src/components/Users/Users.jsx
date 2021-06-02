@@ -2,7 +2,6 @@ import cls from './Users.module.css';
 import * as React from "react";
 import userPhoto from './../../images/user.png';
 import {NavLink} from "react-router-dom";
-import * as axios from "axios";
 
 export let Users = (props) => {
 
@@ -32,10 +31,12 @@ export let Users = (props) => {
                     </div>
                     <div>
                         {u.followed
-                            ? <button onClick={() => {
+                            ? <button disabled={props.followingInProgress.some(id => id === u.id)} onClick={() => {
+                                props.toggleFollowingProgress(true, u.id);
                                 props.onUnfollow(u.id);
                             }}>Unfollow</button>
-                            : <button onClick={() => {
+                            : <button disabled={props.followingInProgress.some(id => id === u.id)} onClick={() => {
+                                props.toggleFollowingProgress(true, u.id);
                                 props.onFollow(u.id);
                             }}>Follow</button>}
                     </div>
