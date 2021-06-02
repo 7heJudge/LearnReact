@@ -18,7 +18,6 @@ class UsersContainer extends React.Component {
     componentDidMount() {
         this.props.toggleIsFetching(true);
         usersAPI.getUsers(this.props.currentPage, this.props.pageSize).then(data => {
-            debugger
                 this.props.toggleIsFetching(false);
                 this.props.setUsers(data.items);
                 this.props.setTotalUsersCount(data.totalCount);
@@ -32,6 +31,19 @@ class UsersContainer extends React.Component {
                 this.props.toggleIsFetching(false);
                 this.props.setUsers(data.items)
             });
+
+    };
+
+    onUnfollow = (id) => {
+            usersAPI.UnfollowToUser(id).then(response => {
+                this.props.unfollow(id)
+            });
+    };
+
+    onFollow = (id) => {
+        usersAPI.FollowToUser(id).then(response => {
+            this.props.follow(id)
+        });
     };
 
     render() {
@@ -41,9 +53,9 @@ class UsersContainer extends React.Component {
                    pageSize={this.props.pageSize}
                    currentPage={this.props.currentPage}
                    onPageChanged={this.onPageChanged}
-                   users={this.props.users}
-                   follow={this.props.follow}
-                   unfollow={this.props.unfollow}/>
+                   onUnfollow={this.onUnfollow}
+                   onFollow={this.onFollow}
+                   users={this.props.users}/>
         </>
     }
 };
