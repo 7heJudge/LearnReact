@@ -1,3 +1,6 @@
+import {usersAPI} from "../api/api";
+import {toggleFollowingProgress, unfollowSuccess} from "./users-reducer";
+
 const SET_USER_DATA = 'SET_USER_DATA';
 
 let initialState = {
@@ -21,4 +24,16 @@ const authReducer = (state = initialState, action) => {
     }
 };
 export default authReducer;
-export const setAuthUserData = (userId, email, login) => ({type: SET_USER_DATA, data: {userId, email, login}});
+export const setAuthUserDataSuccess = (userId, email, login) => ({type: SET_USER_DATA, data: {userId, email, login}});
+
+export const setAuthUserData = () => {
+    return (dispatch) => {
+    usersAPI.authMe().then(response => {
+            if (response.data.resultCode === 0){
+                let {id, email, login} = response.data.data;
+                dispatch(setAuthUserDataSuccess(id, email, login));
+            }
+        });
+    };
+};
+
