@@ -2,10 +2,7 @@ import cls from './Dialogs.module.css';
 import {DialogItem} from "./DialogItem/DialogItem";
 import {Message} from "./Message/Message";
 import * as React from "react";
-import {
-    updateNewMessageBodyCreator,
-    sendMessageCreator
-} from "../../redux/messages-reducer";
+import {Redirect} from "react-router-dom";
 
 export const Dialogs = (props) => {
     let dialogsElements = props.messagesPage.dialogs.map(el => (
@@ -20,6 +17,7 @@ export const Dialogs = (props) => {
         props.onMessageChange(body);
     };
 
+    if (!props.isAuth) return <Redirect to={'/login'} />
     return (
         <div className={cls.dialogs}>
             <div className={cls.dialogsItems}>

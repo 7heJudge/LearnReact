@@ -1,5 +1,4 @@
 import {usersAPI} from "../api/api";
-import {toggleFollowingProgress, unfollowSuccess} from "./users-reducer";
 
 const SET_USER_DATA = 'SET_USER_DATA';
 
