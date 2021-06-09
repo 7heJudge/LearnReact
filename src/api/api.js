@@ -21,13 +21,23 @@ export const usersAPI = {
     FollowToUser(id) {
         return instance
             .post(`follow/${id}`)
-    },
+    }
+};
+
+export const profileAPI = {
     getProfile(userId) {
-    return instance
-        .get(`profile/`+userId)
+        return instance
+            .get(`profile/`+userId)
     },
+    getStatus(userId) {
+        return instance
+            .get(`profile/status/`+userId)
+    }
+};
+
+export const authAPI = {
     authMe() {
-      return instance
-          .get('auth/me')
+        return instance
+            .get('auth/me')
     }
 };
