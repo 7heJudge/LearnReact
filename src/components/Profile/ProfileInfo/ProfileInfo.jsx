@@ -18,7 +18,7 @@ export const ProfileInfo = (props) => {
                     <img src={props.profile.photos.large}/>
                     <div>{props.profile.aboutMe}</div>
                 </div>
-                <ProfileStatus status={props.status}/>
+                <ProfileStatus status={props.status} updateUserStatus={props.updateUserStatus}/>
             </div>
         </div>
     );

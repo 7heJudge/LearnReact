@@ -18,7 +18,6 @@ const App = (props) => {
                 <HeaderContainer/>
                 <Navbar/>
                 <div className='appWrapperContent'>
-                    <Route path='/login' render={() => (<Login />)}/>
                     <Route path='/profile/:userId?' render={() => (<ProfileContainer/>)}/>
                     <Route path='/dialogs' render={() => (<DialogsContainer/>)}/>
                     <Route path='/news' component={News}/>
@@ -26,6 +25,7 @@ const App = (props) => {
                     <Route path='/settings' component={Settings}/>
                     <Route path='/friends' render={() => (<Friends/>)}/>
                     <Route path='/users' render={() => (<UsersContainer/>)}/>
+                    <Route path='/login' render={() => (<Login />)}/>
                 </div>
             </div>
         </BrowserRouter>
