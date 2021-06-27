@@ -2,18 +2,15 @@ import cls from './Dialogs.module.css';
 import {DialogItem} from "./DialogItem/DialogItem";
 import {Message} from "./Message/Message";
 import * as React from "react";
+import {Field, Form, Formik} from "formik";
 
 export const Dialogs = (props) => {
     let dialogsElements = props.messagesPage.dialogs.map(el => (
         <DialogItem id={el.id} key={el.id} name={el.name} image={el.image}/>));
     let messagesElements = props.messagesPage.messages.map(el => (<Message message={el.message} key={el.id}/>));
-    let newMessageBody = props.messagesPage.newMessageBody;
-    let onSendMessageClick = () => {
-        props.onSendMessageClick();
-    };
-    let onMessageChange = (e) => {
-        let body = e.target.value;
-        props.onMessageChange(body);
+
+    let addNewMessage = (values) => {
+      props.onSendMessageClick(values.newMessageBody);
     };
 
     return (
@@ -23,14 +20,32 @@ export const Dialogs = (props) => {
             </div>
             <div className={cls.messages}>
                 <div>{messagesElements}</div>
-                <div>
-                    <div><textarea onChange={onMessageChange} placeholder='Write here...'
-                                   value={newMessageBody}/></div>
-                    <div>
-                        <button onClick={onSendMessageClick}>Send</button>
-                    </div>
-                </div>
+                <AddMessageForm addNewMessage={addNewMessage}/>
             </div>
+        </div>
+    );
+};
+
+const AddMessageForm = (props) => {
+    const submit = (values) => {
+      props.addNewMessage(values);
+    };
+    return (
+        <div>
+            <Formik initialValues={{newMessageBody: ""}}
+                    onSubmit={submit}
+            >
+                {() => (
+                    <div>
+                        <Form>
+                            <div><Field component="textarea" name="newMessageBody" placeholder='Write here...'/></div>
+                            <div>
+                                <button>Send</button>
+                            </div>
+                        </Form>
+                    </div>
+                )}
+            </Formik>
         </div>
     );
 };
