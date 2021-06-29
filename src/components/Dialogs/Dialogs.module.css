@@ -30,10 +30,8 @@
     color: gray;
 }
 
-.messages {
-
-}
-
-.messages .message {
-
+.error {
+    color: red;
+    font-weight: 400;
+    font-size: 14px;
 }

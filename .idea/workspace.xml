@@ -2,17 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06936616-f024-4030-8d21-f41d2ce4b8f3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Login/Login.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/DialogsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/DialogsContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPostsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPostsContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/messages-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/messages-reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/profile-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/profile-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.module.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +40,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/OneDrive/Рабочий стол/ReactMarathon" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Login" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -54,17 +52,17 @@
     <property name="ts.external.directory.path" value="D:\Programms\PhpStorm 2019.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\components\Profile" />
-      <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\components\Navbar" />
-      <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\components\Header" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\components\Login" />
       <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\components\Header" />
       <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\redux" />
       <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\components\Profile" />
       <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\components\common\Preloader" />
-      <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\components" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\components\Profile" />
+      <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\components\Navbar" />
+      <recent name="D:\Programms\OpenServer\OpenServer\domains\react\firstProject\LearnReact\src\components\Header" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -198,12 +196,21 @@
       <workItem from="1624369567503" duration="7619000" />
       <workItem from="1624473338197" duration="912000" />
       <workItem from="1624691918894" duration="707000" />
-      <workItem from="1624786239286" duration="6567000" />
+      <workItem from="1624786239286" duration="7273000" />
+      <workItem from="1624809745491" duration="683000" />
+      <workItem from="1624867550492" duration="3001000" />
+      <workItem from="1624952753072" duration="6394000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$USER_HOME$/OneDrive/Рабочий стол/task-2-tools-typescript-7heJudge/file2.js" />
+        <option value="$USER_HOME$/OneDrive/Рабочий стол/task-2-tools-typescript-7heJudge/file1.js" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
