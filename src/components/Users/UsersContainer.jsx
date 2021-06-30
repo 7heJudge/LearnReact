@@ -10,6 +10,7 @@ import {
 } from "../../redux/users-reducer";
 import {Preloader} from "../common/Preloader/Preloader";
 import {compose} from "redux";
+import {withAuthRedirect} from "../hoc/withAuthRedirect";
 
 class UsersContainer extends React.Component {
 
@@ -79,7 +80,7 @@ export default compose(
         setTotalUsersCount,
         getUsers,
         onPagination
-    })
+    }), withAuthRedirect
 )(UsersContainer);
 
 
