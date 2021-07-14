@@ -26,7 +26,7 @@ let LoginForm = (props) => {
     };
     return (
         <div>
-            <Formik initialValues={{email: '', password: ''}}
+            <Formik initialValues={{email: '', password: '', rememberMe: false}}
                     onSubmit={Submit}
                     validationSchema={validationLoginSchema}
             >
