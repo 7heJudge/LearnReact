@@ -80,7 +80,7 @@ export default compose(
         setTotalUsersCount,
         getUsers,
         onPagination
-    }), withAuthRedirect
+    })
 )(UsersContainer);
 
 
