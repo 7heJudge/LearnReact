@@ -20,9 +20,12 @@ let LoginForm = (props) => {
         email: yup.string().typeError('Should be a string').required('Required').email('Input your email'),
         password: yup.string().typeError('Should be a string').required('Required')
     });
-    const Submit = (values) => {
+    const Submit = (values, {setSubmitting, setStatus, resetForm}) => {
         console.log(values);
-        props.login(values.email, values.password, values.rememberMe);
+        setSubmitting(false);
+        setStatus();
+        props.login(values.email, values.password, values.rememberMe, setSubmitting, setStatus);
+        resetForm();
     };
     return (
         <div>
@@ -30,17 +33,18 @@ let LoginForm = (props) => {
                     onSubmit={Submit}
                     validationSchema={validationLoginSchema}
             >
-                {({errors, touched, handleChange, handleBlur, isValid, handleSubmit, dirty}) => (
+                {({isSubmitting, errors, touched, status}) => (
                     <div>
                         <h1>Login</h1>
-                        <Form onSubmit={handleSubmit}>
-                            <div><Field type="email" name="email" placeholder={"Email"} onChange={handleChange} onBlur={handleBlur}/></div>
+                        <Form>
+                            <div><Field type="email" name="email" placeholder={"Email"}/></div>
                             {touched.email && errors.email && <div className={cls.error}>{errors.email}</div>}
-                            <div><Field type="password" name="password" placeholder={"Password"} onChange={handleChange} onBlur={handleBlur}/></div>
+                            <div><Field type="password" name="password" placeholder={"Password"}/></div>
                             {touched.password && errors.password && <div className={cls.error}>{errors.password}</div>}
-                            <div><Field type="checkbox" name="rememberMe" onChange={handleChange} onBlur={handleBlur}/>Remember me</div>
+                            <div><Field type="checkbox" name="rememberMe"/>Remember me</div>
                             <div>
-                                <button type="submit" disabled={!isValid && !dirty}>
+                                {status && status.errorMessages && <div className={cls.error}>{status.errorMessages}</div>}
+                                <button type="submit" disabled={isSubmitting}>
                                     Login
                                 </button>
                             </div>
@@ -54,7 +58,7 @@ let LoginForm = (props) => {
 
 let mapStateToProps = (state) => {
     return {
-        isAuth: state.auth.isAuth,
+        isAuth: state.auth.isAuth
     };
 };
 
