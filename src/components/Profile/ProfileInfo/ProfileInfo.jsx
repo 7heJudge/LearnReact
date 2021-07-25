@@ -1,6 +1,6 @@
 import cls from './ProfileInfo.module.css';
 import {Preloader} from "../../common/Preloader/Preloader";
-import ProfileStatus from "./ProfileStatus";
+import ProfileStatusWithHooks from "./ProfileStatusWithHooks";
 
 export const ProfileInfo = (props) => {
     if (!props.profile) {
@@ -18,7 +18,7 @@ export const ProfileInfo = (props) => {
                     <img src={props.profile.photos.large}/>
                     <div>{props.profile.aboutMe}</div>
                 </div>
-                <ProfileStatus status={props.status} updateUserStatus={props.updateUserStatus}/>
+                <ProfileStatusWithHooks status={props.status} updateUserStatus={props.updateUserStatus}/>
             </div>
         </div>
     );
