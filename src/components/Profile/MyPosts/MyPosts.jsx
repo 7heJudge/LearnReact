@@ -5,6 +5,22 @@ import * as yup from 'yup';
 import {Field, Form, Formik} from "formik";
 
 export const MyPosts = (props) => {
+    const person = {
+        name: 'bot',
+        age: 0,
+        phone: 2324424,
+        info: function (phone) {
+            console.log(`Name: ${this.name}`)
+            console.log(`Age: ${this.age}`)
+            console.log(`Phone: ${phone}`)
+        }
+    }
+    const yan = {
+        name: 'yan',
+        age: 19
+    }
+
+    person.info.apply(yan, [564645643])
     let postsElements = props.posts.map(el => (<Post message={el.message} key={el.id} likeCounts={el.likeCounts}/>));
     let onAddPost = (values) => {
         props.addPost(values.message);
@@ -38,7 +54,7 @@ let PostsForm = (props) => {
                     <div>
                         <Form>
                             <Field component={"textarea"} name="message" placeholder="Write here..."/>
-                            { touched.message && errors.message && <div className={cls.error}>{errors.message}</div> }
+                            {touched.message && errors.message && <div className={cls.error}>{errors.message}</div>}
                             <div>
                                 <button>Add post</button>
                             </div>
